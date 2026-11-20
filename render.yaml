@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: secretvoice-relay
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /
+    envVars:
+      - key: TRUST_PROXY
+        value: "1"
+      - key: VC_PASSWORD
+        sync: false

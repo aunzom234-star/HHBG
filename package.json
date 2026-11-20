@@ -1,0 +1,9 @@
+{
+  "name": "secretvoice-relay",
+  "version": "2.2.0",
+  "description": "WebSocket relay for the SecretVoice Minecraft mod (lobbies, calls, groups, open channels)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "ws": "^8.18.0" }
+}
